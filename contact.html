@@ -2,7 +2,7 @@
 
 if($_POST["submit"]) {
     $recipient="thepccreativestudio@gmail.com";
-    $subject="Form to email message";
+    $subject=$_POST["subject"];
     $sender=$_POST["sender"];
     $senderEmail=$_POST["senderEmail"];
     $message=$_POST["message"];
@@ -149,7 +149,7 @@ if($_POST["submit"]) {
                   </div>
                   <div class="col-md-6">
                     <label class="text-black" for="lname">Last Name</label>
-                    <input type="text" id="lname" class="form-control">
+                    <input type="text" id="sender" class="form-control">
                   </div>
                 </div>
 
@@ -157,7 +157,7 @@ if($_POST["submit"]) {
                   
                   <div class="col-md-12">
                     <label class="text-black" for="email">Email</label> 
-                    <input type="email" id="email" class="form-control">
+                    <input type="email" id="senderEmail" class="form-control">
                   </div>
                 </div>
 
