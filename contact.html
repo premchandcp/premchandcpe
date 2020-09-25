@@ -1,4 +1,19 @@
-<!DOCTYPE html>
+<?php
+
+if($_POST["submit"]) {
+    $recipient="thepccreativestudio@gmail.com";
+    $subject="Form to email message";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $message=$_POST["message"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+?><!DOCTYPE html>
 <html lang="en">
   <head>
     <title>The PC Creative Studio </title>
@@ -28,7 +43,7 @@
     
   </head>
   <body>
-  
+  <?=$thankYou ?> 
   <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -124,7 +139,7 @@
 
           <div class="row">
             <div class="col-lg-8 mb-5">
-              <form action="#">
+              <form method="post" action="contact.php">
                
 
                 <div class="row form-group">
@@ -172,12 +187,6 @@
             </div>
             <div class="col-lg-3 ml-auto">
               <div class="mb-3 bg-white">
-                <p class="mb-0 font-weight-bold">Address</p>
-                <p class="mb-4">Completely Online</p>
-
-                <p class="mb-0 font-weight-bold">Phone</p>
-                <p class="mb-4"><a href="#">None</a></p>
-
                 <p class="mb-0 font-weight-bold">Email Address</p>
                 <p class="mb-0"><a href="#">thepccreativestudio@gmail.com</a></p>
 
