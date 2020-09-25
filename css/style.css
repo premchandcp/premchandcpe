@@ -11,7 +11,7 @@ body {
 
 ::selection {
   background: #000;
-  color: #fff; }
+  color: #f3f3f4; }
 
 a {
   -webkit-transition: .3s all ease;
@@ -88,7 +88,7 @@ a {
     padding: 4em 0; }
 
 .site-section-heading {
-  color: #fff;
+  color: #ccc;
   position: relative;
   font-size: 2.5rem; }
   @media (min-width: 768px) {
@@ -228,11 +228,11 @@ a {
     top: 0;
     margin-top: -20px; }
   .site-navbar .site-navigation.border-bottom {
-    border-bottom: 1px solid #f3f3f4 !important; }
+    border-bottom: 1px solid #edf0f5 !important; }
   .site-navbar .site-navigation .site-menu {
     margin-bottom: 0; }
     .site-navbar .site-navigation .site-menu .active > a {
-      color: #20c997; }
+      color: #ccc; }
     .site-navbar .site-navigation .site-menu a {
       text-decoration: none !important;
       font-size: 15px;
@@ -318,8 +318,8 @@ a {
             padding: 9px 20px;
             display: block; }
             .site-navbar .site-navigation .site-menu .has-children .dropdown > li > a:hover {
-              background: #f4f5f9;
-              color: #25262a; }
+              background: #fff;
+              color: #20c997; }
           .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children > a:before {
             content: "\e315";
             right: 20px; }
@@ -327,8 +327,8 @@ a {
             left: 100%;
             top: 0; }
           .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children:hover > a, .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children:active > a, .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children:focus > a {
-            background: #f4f5f9;
-            color: #25262a; }
+            background: #fff;
+            color: #20c997; }
       .site-navbar .site-navigation .site-menu .has-children a {
         text-transform: uppercase; }
       .site-navbar .site-navigation .site-menu .has-children:hover > a, .site-navbar .site-navigation .site-menu .has-children:focus > a, .site-navbar .site-navigation .site-menu .has-children:active > a {
@@ -344,7 +344,7 @@ a {
           opacity: 1; }
 
 .site-menu[data-class="social"] a {
-  color: #000; }
+  color: #ccc; }
   .site-menu[data-class="social"] a:hover {
     color: #20c997; }
 
@@ -1116,13 +1116,13 @@ a {
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
       .swiper-container .swiper-slide .image-wrap .image-info h2 {
-        color: #fff; }
+        color: #ccc; }
     .swiper-container .swiper-slide .image-wrap:hover:before {
       background: rgba(0, 0, 0, 0.4);
       content: ""; }
   .swiper-container .btn-outline-white {
-    border-color: #fff;
-    color: #fff;
+    border-color: #ccc;
+    color: #ccc;
     border-width: 2px;
     text-transform: uppercase;
     font-size: 11px;
